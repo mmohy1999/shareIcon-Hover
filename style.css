@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.about {
+    height: 500px;
+    width: 500px;
+    background-color: #808080;
+    margin: auto;
+    display: flex;
+    margin: 25vh auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.share {
+    background-image: url(images/icon-share.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transition: transform 1s;
+}
+.about .share:hover{
+transform: rotate(720deg);
+}
+.facebook {
+    background-image: url(images/icon-facebook-.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -28px;
+    margin-right: -53px;
+    left: 100%;
+}
+
+.about .share:hover~.facebook {
+    background-color: #3B5998;
+    left: auto;
+}
+
+.twitter {
+    background-image: url(images/icon-twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -45px;
+    margin-right: 0px;
+    left: 100%;
+}
+
+.about .share:hover~.twitter {
+    background-color: #00ACED;
+    left: auto;
+}
+
+.google {
+    background-image: url(images/icon-google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -28px;
+    margin-right: 53px;
+    left: 100%;
+}
+
+.about .share:hover~.google {
+    background-color: #dd4b39;
+    left: auto;
+}
